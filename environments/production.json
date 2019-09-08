@@ -1,0 +1,51 @@
+{
+  "name": "development",
+  "default_attributes": {
+    "fail2ban": {
+      "enabled": true,
+      "destemail": "aspyatkin@gmail.com",
+      "sender": "operator@volgactf.ru",
+      "sendername": "Fail2Ban Operator",
+      "jail": {
+        "sshd": {
+          "enabled": true,
+          "maxretry": 5,
+          "findtime": 259200,
+          "bantime": 86400
+        }
+      }
+    },
+    "firewall": {
+      "ubuntu_iptables": true,
+      "allow_loopback": true,
+      "allow_ssh": true,
+      "allow_icmp": true,
+      "ipv6_enabled": false
+    },
+    "nodejs": {
+      "version": "12.9.0",
+      "binary": {
+        "checksum": {
+          "linux_x64": "3991e5b65fbaab8d70cda813b9bc73dd3b4201aeef42bcb1c000a03869aa0610"
+        }
+      }
+    },
+    "ssmtp": {
+      "sender_email": "operator@volgactf.ru",
+      "smtp_host": "email-smtp.us-east-1.amazonaws.com",
+      "smtp_port": 465,
+      "smtp_username": "AKIAXVVRQZBGYH6SI7WA",
+      "smtp_enable_ssl": true,
+      "smtp_enable_starttls": false,
+      "from_line_override": true
+    },
+    "ntp": {
+      "servers": [
+        "0.pool.ntp.org",
+        "1.pool.ntp.org",
+        "2.pool.ntp.org",
+        "3.pool.ntp.org"
+      ]
+    }
+  }
+}

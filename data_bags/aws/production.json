@@ -1,0 +1,17 @@
+{
+  "id": "production",
+  "activity.final.2019.volgactf.org": {
+    "encrypted_data": "doXYCTx/giDK83Qy8+/s0z5ZfYZ7/8hyYOqvsP04gBX1U5AoWLI4Ma6l0862\n96DAeCTRIzXDoCbhRQ6KhZGLbRORi95gVW59lwNnApFcGFSBd7I11ylggaQs\nENzjlbvwWfdNCKLELDUFaWH5Hv+MOmV12kgUyHb5h93XhBzycO4pZ9HPL5I1\nLUPbm3FDQWB/ejdHTDHDOnhAyJJ6Z2IxC9IRT+YH0p+Mk4BcfOf7SG8M44C1\nEAXabDJVKGUlPx26h3cf4wTr9FjN\n",
+    "iv": "uGpwomZrtEi2tbIM\n",
+    "auth_tag": "jFtSCYIpzRUwW6EAonPHEA==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "smarthome.final.2019.volgactf.org": {
+    "encrypted_data": "GAE8NWphhu1AHcJw3pL8tE9Eagm7lmSzVCrlHsDupWWRDR0PsUQvGOQSIOtM\nRA2B7+DU/nTiWtTH2lpPODBgqlj7axPqQ36MeMzBFAKBpcF4atCPyhhlJeGu\n7NgYn0L2O05JwHbpJeeD8+vOV2hD05kT544ZszmvYFLq4s5yoJBs760NCJXj\nAKyJCGOyYgZai7XAr5iVcrJ5apYzEHt24s35UwzIlLc8AehaKK1QESdtTopQ\n5lAt7n4Flas5gXUE5Fe5MiT8R/j21A==\n",
+    "iv": "HgjPP/KsEHOD9cqe\n",
+    "auth_tag": "lf54FWd+OOFhti6eQcfGkQ==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}

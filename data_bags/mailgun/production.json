@@ -1,0 +1,17 @@
+{
+  "id": "production",
+  "activity.final.2019.volgactf.org": {
+    "encrypted_data": "REa2X3x+4Vat78/1OWPN2Mk2JPy+k+5g6GRgbew65JSBoFBJu6K+diuZQJO6\nnCXauKsJHfLjztew+9QXPdLTjleb5Q==\n",
+    "iv": "g9AR8Tsb3UNIUmyH\n",
+    "auth_tag": "E6XHNYfhwKwdlALYERhCYg==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "smarthome.final.2019.volgactf.org": {
+    "encrypted_data": "k4in4amOSQDeqdyiG769Ob47QocT12XpfqsZSI8nRuJJyBeR+hHXwEyWnfPx\nXrggsNiZ1s8Cx+NIYnx0AnTOE93RrQ==\n",
+    "iv": "CsFZffgxcxaEG4GN\n",
+    "auth_tag": "YT4FOB+CVeiOFvM3LDHfXA==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}

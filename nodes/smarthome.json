@@ -1,0 +1,69 @@
+{
+  "name": "smarthome",
+  "chef_environment": "production",
+  "normal": {
+    "knife_zero": {
+      "host": "smarthome.final.2019.volgactf.org"
+    },
+    "volgactf": {
+      "qualifier": {
+        "fqdn": "volgactf-iot.pw",
+        "secure": true,
+        "proxied": false,
+        "oscp_stapling": true,
+        "optimize_delivery": true,
+        "email": {
+          "transport": "smtp",
+          "address_validator": "mailgun",
+          "sender_name": "VolgaCTF SmartHome",
+          "sender_address": "noreply@volgactf.ru"
+        },
+        "customizers": {
+          "2019-smarthome-theme": {
+            "repo_id": "VolgaCTF/2019-smarthome-theme",
+            "repo_revision": "master"
+          }
+        },
+        "customizer_name": "2019-smarthome-theme",
+        "cleanup_upload_dir": {
+          "enabled": true,
+          "cron": {
+            "mailto": "aspyatkin@gmail.com",
+            "mailfrom": "operator@volgactf.ru",
+            "minute": "*/15"
+          }
+        },
+        "backup": {
+          "enabled": true,
+          "cron": {
+            "mailto": "aspyatkin@gmail.com",
+            "mailfrom": "operator@volgactf.ru",
+            "minute": "0",
+            "hour": "*/4"
+          }
+        },
+        "mailgun": {
+          "domain": "mg.srvr.work"
+        },
+        "smtp": {
+          "host": "email-smtp.us-east-1.amazonaws.com",
+          "port": 465,
+          "secure": true,
+          "username": "AKIAXVVRQZBGYH6SI7WA"
+        },
+        "notification_post_twitter": false,
+        "notification_post_telegram": false,
+        "num_processes_server": 4,
+        "num_processes_queue": 4
+      }
+    }
+  },
+  "automatic": {
+    "fqdn": "smarthome.final.2019.volgactf.org",
+    "platform": "ubuntu",
+    "platform_version": "18.04"
+  },
+  "run_list": [
+    "recipe[volgactf-qualifier-main::qualifier_server]"
+  ]
+}
