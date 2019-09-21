@@ -1,0 +1,47 @@
+{
+  "name": "checker1",
+  "chef_environment": "production",
+  "normal": {
+    "knife_zero": {
+      "host": "checker1.final.2019.volgactf.org"
+    },
+    "volgactf": {
+      "final": {
+        "checker": {
+          "fqdn": "checker1.final.volgactf",
+          "environment": {
+            "SERVICE_PUB_KEY_SIGNATURE": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJpZGVudGl0eSI6ImNoZWNrZXIiLCJ2IjoiMWI3ZjEyNmFlM2FkZDhjNTNhMDcyODg5MzAyYjgzOGIzMzE0ZjRlMTEyNmE1YTk4YWQ4ZGJiODE0ODE5ZTI3ZGQ1NzY2MmEwYzdiOWI3MmZiMTE3ZjRjNWQ1YTdjYzJhZjA4N2FjNWM3ODlhZWM4YzkwMmFiYWI4MGI3MDljYWNiY2VlMzhmMTMyNDUwODRjMjhhMDEwMzhmZDZkOTQ2NDk0OGE4Mjk5N2VhMDBkZmI2ZTU0NTU0NDQ0ZmE5NDhhMWU0ZmFjNDcyNzE0YjgxNzMyZTMxZDA2ZTFjZjkxMWE5Y2E5MTY2MmQ5ZTMwOGZlYjdjYTgwZTM3ZDViNWM2ZGQifQ.9f_nvMfKppfc8rcCrBW8q5P9dLsl2dFP0TjmSdHDgs-wPDgS7yNWkwGoj2WM7mIDBcOHhUKdvFHRreY0X-d7Ow"
+          },
+          "docker": {
+            "bip": "172.16.33.1/24"
+          },
+          "network": {
+            "name": "checker1-network"
+          },
+          "image": {
+            "name": "checker1",
+            "registry": "docker.volgactf.org",
+            "repo": "volgactf-2019-final-claus-checker",
+            "tag": "1"
+          },
+          "processes": 8,
+          "netdata": {
+            "enabled": true,
+            "stream": {
+              "name": "checker1_server",
+              "destination": "172.31.96.101"
+            }
+          }
+        }
+      }
+    }
+  },
+  "automatic": {
+    "fqdn": "checker1.final.2019.volgactf.org",
+    "platform": "ubuntu",
+    "platform_version": "18.04"
+  },
+  "run_list": [
+    "recipe[volgactf-final-main::checker_server]"
+  ]
+}

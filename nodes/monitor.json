@@ -1,0 +1,72 @@
+{
+  "name": "monitor",
+  "chef_environment": "production",
+  "normal": {
+    "knife_zero": {
+      "host": "monitor.final.2019.volgactf.org"
+    },
+    "volgactf": {
+      "final": {
+        "monitor": {
+          "allow_access_from": [
+            "172.17.97.0/24"
+          ],
+          "nginx": {
+            "fqdn": "monitor.final.2019.volgactf.org"
+          },
+          "netdata": {
+            "listen": {
+              "host": "172.31.96.101"
+            },
+            "stream": {
+              "master_server": {
+                "origin": "172.31.96.100",
+                "history": 7200
+              },
+              "postgres_server": {
+                "origin": "172.31.96.102",
+                "history": 7200
+              },
+              "redis_server": {
+                "origin": "172.31.96.103",
+                "history": 7200
+              },
+              "checker1_server": {
+                "origin": "172.31.96.201",
+                "history": 7200
+              },
+              "checker2_server": {
+                "origin": "172.31.96.202",
+                "history": 7200
+              },
+              "checker3_server": {
+                "origin": "172.31.96.203",
+                "history": 7200
+              },
+              "checker4_server": {
+                "origin": "172.31.96.204",
+                "history": 7200
+              },
+              "checker5_server": {
+                "origin": "172.31.96.205",
+                "history": 7200
+              },
+              "checker6_server": {
+                "origin": "172.31.96.206",
+                "history": 7200
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "automatic": {
+    "fqdn": "monitor.final.2019.volgactf.org",
+    "platform": "ubuntu",
+    "platform_version": "18.04"
+  },
+  "run_list": [
+    "recipe[volgactf-final-main::monitor_server]"
+  ]
+}

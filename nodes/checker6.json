@@ -1,0 +1,14 @@
+{
+  "name": "checker6",
+  "chef_environment": "production",
+  "normal": {
+    "knife_zero": {
+      "host": "checker6.final.2019.volgactf.org"
+    }
+  },
+  "automatic": {
+    "fqdn": "checker6.final.2019.volgactf.org",
+    "platform": "ubuntu",
+    "platform_version": "18.04"
+  }
+}

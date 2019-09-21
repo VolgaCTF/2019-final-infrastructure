@@ -1,0 +1,10 @@
+{
+  "id": "production",
+  "stream": {
+    "encrypted_data": "B9gZMjUkeD7YXxfawlQGeb4NQg/fMBUnlTbwD7nc0rb/zhNe7N99DkZ6yIw+\n4MHOkuSAoKy8x6Gm+A/XGw4HE+DG9iBFu1m1gBF1nOTE3WlpifA2BTK2Wbis\nt7nOJukkZ3q+nRJCn+fIFkwPzbbJy0jHhSHRmQO3b3spGPuY3ziRC2pGw0JX\n5DJ0JrFa73D5HXSNE2wZs34t1i0IJb3ivO731Ovz7zwLXTLWATKykqm53UvZ\n3BUV9O+UOmRGmdiBAYs4EPmHHVQONelRa0Rfdz8osRNHrx25L0I5XwW/zlMY\nt6Zzyi8zYkAovPGAnM6prgz922iyaUWqGoGaZAW2I9L/It5uLXxmvThyRo/E\noXoMfUvlBah2pEtQ2xsf1+pigJl868piZ3UQS9zm0D3Y4Tjt5x6ob6TJQC5t\nieNowYqzEK/gJp8JHn4tQSHw5baOlq3PFcxByXWrmEnV90GWROf448hwfO8u\nNQt3hEjKNmRib4aAFuAZufs7soBaGQNakoZaxqUxiWAz9IkGldTDE/2KWZkb\noZ9d8iU+XtpvZXNJK2i2HheeUfrhvohCr/u/gCoKG+1x5PZfs4J47bVnaihp\n65fIFb675c9kd3qUXHgLuCmIfDCDw+4SfL7ZG1GKprv5dhBxId3bWUWtlWs2\nmvs7AVAk2IRQeN/h7R9N5/Gc2nEyzJmSkRYglDbf89rR/nF0nzLJo4ZCqg==\n",
+    "iv": "m8+vd0aBMR+XgLnX\n",
+    "auth_tag": "iNnl5sUV8cHtmluNgjmwRA==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}

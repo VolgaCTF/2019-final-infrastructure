@@ -1,0 +1,17 @@
+{
+  "id": "production",
+  "master.final.2019.volgactf.org": {
+    "encrypted_data": "Ghw6UQ3mLEw0nIr7HzthVYUm3KX4G3SXsjoQC/EyHpgMihGqm2FtPTLd3oFN\nps+xUS7t8oQtJTA=\n",
+    "iv": "YN1/ubgcLgw7V/C2\n",
+    "auth_tag": "0UwfIKuG64fY0slglL5D+Q==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "redis.final.2019.volgactf.org": {
+    "encrypted_data": "gK3qqA7yj5/YMycKGnAOVoFrHpICcfokKmNRiz76JE7rCZ76fHNlts1Jk9DX\nhYX9ynvVm1e/j18=\n",
+    "iv": "4iNaqmRfYN9aXAwp\n",
+    "auth_tag": "DPyF7b4vfXEsvyktpEKpPA==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}

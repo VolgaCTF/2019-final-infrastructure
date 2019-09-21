@@ -1,0 +1,32 @@
+{
+  "name": "redis",
+  "chef_environment": "production",
+  "normal": {
+    "knife_zero": {
+      "host": "redis.final.2019.volgactf.org"
+    },
+    "volgactf": {
+      "final": {
+        "redis": {
+          "allow_access_from": [
+            "172.31.96.100/32"
+          ],
+          "netdata": {
+            "enabled": true,
+            "stream": {
+              "destination": "172.31.96.101"
+            }
+          }
+        }
+      }
+    }
+  },
+  "automatic": {
+    "fqdn": "redis.final.2019.volgactf.org",
+    "platform": "ubuntu",
+    "platform_version": "18.04"
+  },
+  "run_list": [
+    "recipe[volgactf-final-main::redis_server]"
+  ]
+}

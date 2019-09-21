@@ -1,0 +1,47 @@
+{
+  "name": "checker5",
+  "chef_environment": "production",
+  "normal": {
+    "knife_zero": {
+      "host": "checker5.final.2019.volgactf.org"
+    },
+    "volgactf": {
+      "final": {
+        "checker": {
+          "fqdn": "checker5.final.volgactf",
+          "environment": {
+
+          },
+          "docker": {
+            "bip": "172.16.33.1/24"
+          },
+          "network": {
+            "name": "checker5-network"
+          },
+          "image": {
+            "name": "checker5",
+            "registry": "docker.volgactf.org",
+            "repo": "volgactf-2019-final-enjoycasino-checker",
+            "tag": "5"
+          },
+          "processes": 8,
+          "netdata": {
+            "enabled": true,
+            "stream": {
+              "name": "checker5_server",
+              "destination": "172.31.96.101"
+            }
+          }
+        }
+      }
+    }
+  },
+  "automatic": {
+    "fqdn": "checker5.final.2019.volgactf.org",
+    "platform": "ubuntu",
+    "platform_version": "18.04"
+  },
+  "run_list": [
+    "recipe[volgactf-final-main::checker_server]"
+  ]
+}

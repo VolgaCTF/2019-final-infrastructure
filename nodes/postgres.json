@@ -1,0 +1,32 @@
+{
+  "name": "postgres",
+  "chef_environment": "production",
+  "normal": {
+    "knife_zero": {
+      "host": "postgres.final.2019.volgactf.org"
+    },
+    "volgactf": {
+      "final": {
+        "postgres": {
+          "allow_access_from": [
+            "172.31.96.100/32"
+          ],
+          "netdata": {
+            "enabled": true,
+            "stream": {
+              "destination": "172.31.96.101"
+            }
+          }
+        }
+      }
+    }
+  },
+  "automatic": {
+    "fqdn": "postgres.final.2019.volgactf.org",
+    "platform": "ubuntu",
+    "platform_version": "18.04"
+  },
+  "run_list": [
+    "recipe[volgactf-final-main::postgres_server]"
+  ]
+}

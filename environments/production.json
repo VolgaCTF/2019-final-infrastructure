@@ -1,5 +1,5 @@
 {
-  "name": "development",
+  "name": "production",
   "default_attributes": {
     "fail2ban": {
       "enabled": true,
@@ -46,6 +46,230 @@
         "2.pool.ntp.org",
         "3.pool.ntp.org"
       ]
+    },
+    "volgactf": {
+      "final": {
+        "dns": {
+          "records": [
+            {
+              "type": "A",
+              "name": "master.final.volgactf",
+              "ipv4_address": "172.31.96.100"
+            },
+            {
+              "type": "A",
+              "name": "monitor.final.volgactf",
+              "ipv4_address": "172.31.96.101"
+            },
+            {
+              "type": "A",
+              "name": "postgres.final.volgactf",
+              "ipv4_address": "172.31.96.102"
+            },
+            {
+              "type": "A",
+              "name": "redis.final.volgactf",
+              "ipv4_address": "172.31.96.103"
+            },
+            {
+              "type": "A",
+              "name": "checker1.final.volgactf",
+              "ipv4_address": "172.31.96.201"
+            },
+            {
+              "type": "A",
+              "name": "checker2.final.volgactf",
+              "ipv4_address": "172.31.96.202"
+            },
+            {
+              "type": "A",
+              "name": "checker3.final.volgactf",
+              "ipv4_address": "172.31.96.203"
+            },
+            {
+              "type": "A",
+              "name": "checker4.final.volgactf",
+              "ipv4_address": "172.31.96.204"
+            },
+            {
+              "type": "A",
+              "name": "checker5.final.volgactf",
+              "ipv4_address": "172.31.96.205"
+            },
+            {
+              "type": "A",
+              "name": "checker6.final.volgactf",
+              "ipv4_address": "172.31.96.206"
+            }
+          ]
+        },
+        "postgres": {
+          "host": "postgres.final.volgactf"
+        },
+        "redis": {
+          "host": "redis.final.volgactf"
+        },
+        "master": {
+          "fqdn": "master.final.volgactf"
+        },
+        "checker": {
+          "allow_access_from": [
+            "172.31.96.100/32"
+          ]
+        },
+        "config": {
+          "internal_networks": [
+            "172.31.96.0/24",
+            "172.17.97.0/24"
+          ],
+          "api_req_limits": {
+            "flag_info": {
+              "rate": "10r/s",
+              "burst": 5,
+              "nodelay": true
+            },
+            "flag_submit": {
+              "rate": "5r/s",
+              "burst": 5,
+              "nodelay": true
+            },
+            "service_status": {
+              "rate": "10r/s",
+              "burst": 5,
+              "nodelay": true
+            }
+          },
+          "competition": {
+            "title": "VolgaCTF 2019 Final"
+          },
+          "settings": {
+            "flag_lifetime": 360,
+            "round_timespan": 120,
+            "poll_timespan": 35,
+            "poll_delay": 40
+          },
+          "teams": {
+            "team1": {
+              "name": "Bushwhackers",
+              "network": "172.18.1.0/24"
+            },
+            "team2": {
+              "name": "VoidHack",
+              "network": "172.18.2.0/24"
+            },
+            "team3": {
+              "name": "Pixels",
+              "network": "172.18.3.0/24",
+              "guest": true
+            },
+            "team4": {
+              "name": "Great_Octopus",
+              "network": "172.18.4.0/24"
+            },
+            "team5": {
+              "name": "SFT0",
+              "network": "172.18.5.0/24"
+            },
+            "team6": {
+              "name": "ntcZajebisty",
+              "network": "172.18.6.0/24"
+            },
+            "team7": {
+              "name": "Kappa",
+              "network": "172.18.7.0/24"
+            },
+            "team8": {
+              "name": "c0r3dump",
+              "network": "172.18.8.0/24"
+            },
+            "team9": {
+              "name": "ISITDTU",
+              "network": "172.18.9.0/24"
+            },
+            "team10": {
+              "name": "WeAreScientists",
+              "network": "172.18.10.0/24",
+              "guest": true
+            },
+            "team11": {
+              "name": "LC↯BC",
+              "network": "172.18.11.0/24"
+            },
+            "team12": {
+              "name": "BE4HOXVII",
+              "network": "172.18.12.0/24"
+            },
+            "team13": {
+              "name": "--==__Har[u]6aToP__==--",
+              "network": "172.18.13.0/24"
+            },
+            "team14": {
+              "name": "JustDoIt",
+              "network": "172.18.14.0/24"
+            },
+            "team15": {
+              "name": "UpperSec",
+              "network": "172.18.15.0/24"
+            },
+            "team16": {
+              "name": "v0rt3x",
+              "network": "172.18.16.0/24",
+              "guest": true
+            },
+            "team17": {
+              "name": "AVe M",
+              "network": "172.18.17.0/24"
+            },
+            "team18": {
+              "name": "WNG",
+              "network": "172.18.18.0/24"
+            },
+            "team19": {
+              "name": "Speakers",
+              "network": "172.18.19.0/24",
+              "guest": true
+            }
+          },
+          "domain_files": [
+            {
+              "name": "init-10",
+              "type": "competition_init",
+              "services": {
+                "service1": {
+                  "name": "claus",
+                  "hostmask": "0.0.0.3",
+                  "checker_endpoint": "http://checker1.final.volgactf",
+                  "attack_priority": true
+                },
+                "service2": {
+                  "name": "f",
+                  "hostmask": "0.0.0.3",
+                  "checker_endpoint": "http://checker2.final.volgactf",
+                  "attack_priority": true
+                },
+                "service3": {
+                  "name": "hourglass",
+                  "hostmask": "0.0.0.3",
+                  "checker_endpoint": "http://checker3.final.volgactf",
+                  "attack_priority": true
+                },
+                "service4": {
+                  "name": "cookbook",
+                  "hostmask": "0.0.0.3",
+                  "checker_endpoint": "http://checker4.final.volgactf",
+                  "attack_priority": true
+                },
+                "service5": {
+                  "name": "enjoycasino",
+                  "hostmask": "0.0.0.3",
+                  "checker_endpoint": "http://checker5.final.volgactf",
+                  "attack_priority": true
+                }
+              }
+            }
+          ]
+        }
+      }
     }
   }
 }

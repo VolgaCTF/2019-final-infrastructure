@@ -1,16 +1,30 @@
 {
   "id": "production",
   "activity.final.2019.volgactf.org": {
-    "encrypted_data": "MTJvJ5J7qm3G7ODcDutNGAOCtDNnZAHUca76PBVlenmPkKANI923LSMut/5b\nd/FOjphBYiKKmjroSjOY3RC8PuaGysu3L/dWq4B9OvuiB97nI8pW9P7OokzD\nytuF+SSu84M28wWZwQzgzE6dFMPymuBnE0voNZM2rySSy7sgdCZvipu4mw==\n",
-    "iv": "jMFaB21mFl561yNe\n",
-    "auth_tag": "b6x+evV+Xmqb/G2nKnJMRA==\n",
+    "encrypted_data": "f15q34QpQKr5Hqq8745z4AA1FkFkf0tlIbNqcST4mFeELRvHwESS+71QU7sH\noSl+Dq4vNcS9jpR2VXcaolWNBvDj5zwedwZsKjZovZvQo8QmAJXv99gZnIA2\nBCcs+fhH07tSyyZHOjYg+Qm3zwPz3kpq1WQjFRWlWf66sQwKsQZ2l05fMQ==\n",
+    "iv": "QpsArUJQzcbFTXp1\n",
+    "auth_tag": "3o/uWvnUMFiZuztG/1fgLw==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   },
   "smarthome.final.2019.volgactf.org": {
-    "encrypted_data": "713SuilaqghqJGk0boM1M9Q/REodWX1eXtOyGysT+4yOB9Qs1glJtQl39OTp\nzcudhPzR9aOnSBRHCMKwnqO9aliNQDv3ttO+s/XTBHsaigAjPgX8KoalSwYJ\noJ2MZ+PuVh+iJQnAJhvQZdgOH0OKBeDWzSqF3cdhiLJVOr0QpK5s5qkmsg==\n",
-    "iv": "7R7qx7tYjQd7+osY\n",
-    "auth_tag": "y4p/e+GYbdvSOB9EywkWDA==\n",
+    "encrypted_data": "JhkST3qEQFHfUb6s39j9rj5AOW4m19h2/NRvy07chrm/FSvANA5UxncYzIBZ\nqeYVnc+A9W8knyTq+AqoDGE+D8AebcVv0Rqn09hgJNst7RCjaifb2axUKzE8\noA+56hMnC0COjFs310sueKNFrE+of5elpca12f4dB8RL/qt4StmKfC0qaA==\n",
+    "iv": "JBHZkicBXRSqAU0n\n",
+    "auth_tag": "AFkaRVzGtIAd7VUWwH92vw==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "master.final.2019.volgactf.org": {
+    "encrypted_data": "FsNz/h0kpwxrXTXplD4+YeXlVEEEPjgU1V9XflQkY0AhXyQzwVSWEgEkYJ3L\nv3xFW8W3lfXB4gJJzxlEnWQVM/YMDm3nCbNEfg2/O5uhOu2lR6wcGuViaOaA\n9ojTGnT23KOfL85cOCPcwDASrz8ydqQ=\n",
+    "iv": "1MtdgOSzB90QgRZj\n",
+    "auth_tag": "O+hLno8JURUiBfV/hh5P3w==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "postgres.final.2019.volgactf.org": {
+    "encrypted_data": "EMj455ZqvYIiEiAtMVwuIqCDHZy+TujN3PotZoVBFsoC5uXQfKlX1Fj7qrPe\nN+MD9sQFTwJ2QWW0+ddIe+xZcGV+r3q3rrsiT+c44i5oQpE8yY+QOjLosD+l\nVvH7DOgJCub6XfHLfxDZHevLGfLti/g=\n",
+    "iv": "6FwjbmUso8bl00vI\n",
+    "auth_tag": "vIaWYKETZKAO3BkeDUVjvg==\n",
     "version": 3,
     "cipher": "aes-256-gcm"
   }
